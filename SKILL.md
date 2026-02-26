@@ -35,5 +35,5 @@ result = transcribe_audio("podcast.mp3", output_dir="./output")
 ## 已知限制
 
 - FunASR 时间戳存在累积漂移（约 5s/10min），不适合需要精确时间戳的场景
-- 如需高精度时间戳（如口癖剪辑），建议使用 [filler_detect](https://github.com/YourUsername/filler_detect) 的 Qwen3+VAD 方案
+- 如需高精度时间戳（如口癖剪辑），建议使用 [filler_detect](https://github.com/yanhao2046/filler_detect) 的 Qwen3+VAD 方案
 - 首次运行需下载模型（约 1GB）

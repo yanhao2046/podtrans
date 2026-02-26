@@ -52,12 +52,12 @@ Standard SubRip subtitle format, viewable in Aegisub or any subtitle editor.
 ## Known Limitations
 
 - **Timestamp drift**: FunASR has cumulative timestamp drift (~5s per 10 minutes). Text accuracy is unaffected, but timestamps become less reliable for longer audio.
-- **Not suitable for precise editing**: If you need accurate timestamps for audio editing (e.g., removing filler words), use [filler_detect](https://github.com/YourUsername/filler_detect) which uses Qwen3+VAD for high-precision alignment.
+- **Not suitable for precise editing**: If you need accurate timestamps for audio editing (e.g., removing filler words), use [filler_detect](https://github.com/yanhao2046/filler_detect) which uses Qwen3+VAD for high-precision alignment.
 - First run downloads ~1GB of models.
 
 ## Related Project
 
-**[filler_detect](https://github.com/YourUsername/filler_detect)** — Podcast filler word detection and rough-cut tool.
+**[filler_detect](https://github.com/yanhao2046/filler_detect)** — Podcast filler word detection and rough-cut tool.
 
 PodTrans and filler_detect were originally designed as a two-stage pipeline (ASR + filler detection). During development, FunASR's timestamp drift made it unsuitable for precise audio editing, so filler_detect built its own Qwen3-based ASR pipeline. Both projects now work independently:
 

@@ -11,7 +11,7 @@ PodTrans 是一个**独立的 ASR 转录工具**，适用于：
 - 语音内容的全文检索和归档
 - 作为其他音频处理工具的 ASR 前端
 
-> **注意**：PodTrans 最初设计为播客口癖剪辑管线的第一阶段（ASR转录）。在开发过程中，发现 FunASR 存在时间戳漂移问题（详见第 7 节），导致下游项目 [filler_detect](https://github.com/YourUsername/filler_detect) 最终采用了自带 ASR 的 Qwen3+VAD 方案。PodTrans 现在作为独立转录工具维护。
+> **注意**：PodTrans 最初设计为播客口癖剪辑管线的第一阶段（ASR转录）。在开发过程中，发现 FunASR 存在时间戳漂移问题（详见第 7 节），导致下游项目 [filler_detect](https://github.com/yanhao2046/filler_detect) 最终采用了自带 ASR 的 Qwen3+VAD 方案。PodTrans 现在作为独立转录工具维护。
 
 ### 1.3 核心要求
 - 纯本地运行，无需联网（模型首次下载除外）
@@ -213,7 +213,7 @@ python podtrans_core.py audio.mp3 ./output
 
 ## 8. 与 filler_detect 的关系
 
-PodTrans 和 [filler_detect](https://github.com/YourUsername/filler_detect) 是同一播客处理工具链中的两个独立项目：
+PodTrans 和 [filler_detect](https://github.com/yanhao2046/filler_detect) 是同一播客处理工具链中的两个独立项目：
 
 ```
 ┌──────────────────────────────────────────────────────┐
