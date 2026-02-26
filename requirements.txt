@@ -1,0 +1,4 @@
+funasr>=1.0.0
+modelscope>=1.10.0
+torch>=2.0.0
+ffmpeg-python>=0.2.0
