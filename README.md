@@ -1,3 +1,9 @@
+<div align="center">
+
+English | [中文](README_zh.md)
+
+</div>
+
 # PodTrans
 
 Local podcast transcription tool using FunASR. Converts audio files to text with word-level timestamps.
